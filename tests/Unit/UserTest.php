@@ -1,17 +1,19 @@
 <?php
+
 namespace Tests\Unit;
-use \App\User;
+
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-class InsertUserTest extends TestCase
+
+class UserTest extends TestCase
 {
     /**
      * A basic test example.
      *
      * @return void
      */
-    public function testInsertUser()
+    public function testExample()
     {
         $user=factory (\App\User::class)->make();
         $this->assertTrue($user->save());
