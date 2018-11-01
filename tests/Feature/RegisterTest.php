@@ -13,7 +13,7 @@ class RegisterTest extends TestCase
      *
      * @return void
      */
-    public function testExample()
+    public function testRegister()
     {
         $response = $this->get('/register');
 
