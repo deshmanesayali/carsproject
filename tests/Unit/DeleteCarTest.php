@@ -10,7 +10,7 @@ class DeleteCarTest extends TestCase
     public function testDeleteCar(){
         $car = Cars::find(51);
         DB::table('cars')->where('id', '>', 50)->delete();
-        $cars = Cars::all();
+        $cars = Cars ::all();
         $this->assertDatabaseMissing('cars', ['id' => '51']);
     }
 }
