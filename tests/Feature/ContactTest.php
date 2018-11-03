@@ -13,9 +13,9 @@ class ContactTest extends TestCase
      *
      * @return void
      */
-
-    public function testContact()
+    public function testExample()
     {
+        //$this->assertTrue(true);
         $response = $this->get('/contact');
 
         $response->assertStatus(200);

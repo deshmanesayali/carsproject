@@ -1,22 +1,19 @@
 <?php
-
-namespace Tests\Feature;
-
+namespace Tests\Unit;
+use \App\User;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-
-class LoginTest extends TestCase
+class InsertUserTest extends TestCase
 {
     /**
      * A basic test example.
      *
      * @return void
      */
-    public function testExample()
+    public function testInsertUser()
     {
-        $response = $this->get('/login');
-
-        $response->assertStatus(200);
+        $user=factory (\App\User::class)->make();
+        $this->assertTrue($user->save());
     }
 }
