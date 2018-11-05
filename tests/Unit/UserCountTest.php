@@ -4,7 +4,7 @@ use Tests\TestCase;
 use \App\User;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-class CountUserTest extends TestCase
+class UserCountTest extends TestCase
 {
     public function testCountUser(){
         $users=User::all();

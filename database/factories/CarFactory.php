@@ -5,7 +5,7 @@ $factory->define(App\Cars::class, function (Faker $faker) {
         //'make' => $faker->firstName(),
         'make' => $faker->randomElement(['firstName[]'=>'ford', 'honda', 'toyota']),
         'model' => $faker->company(),
-        'year' => $faker->date(),
+        'year' => $faker->year(),
     ];
     //$faker = factory(App\User::class)->model(['name[]'=>'ford', 'honda', 'toyota']);
 });
